@@ -28,6 +28,3 @@ Where MOD4 = WINDOWS/SUPER Key
 
 ## Dependencies
 Check the `dwms`, `natscroll`, `autolock` and `dbar` scripts for dependencies, modify them to add or remove dependencies.
-
-## Notes
-`dwm-colorbar-6.2.diff` was applied partially to make the status more readable
