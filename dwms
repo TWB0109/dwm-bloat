@@ -1,0 +1,18 @@
+#!/bin/bash
+
+setxkbmap -layout us
+setxkbmap -option caps:swapescape
+nitrogen --restore
+xrdb ~/.Xresources
+# Copy the script natscroll in this repo to $HOME/.scripts
+$HOME/.scripts/natscroll
+# Copy the script autolock in this repo to $HOME/.scripts
+$HOME/.scripts/autolock &
+# In Arch install "polkit-gnome"
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+dbar &
+picom -cf --vsync &
+
+while true; do
+    dwm 2> ~/.dwm.log
+done
